@@ -181,6 +181,13 @@ Class | Method | HTTP request | Description
 
 
 Authentication schemes defined for the API:
+<a id="Authorization"></a>
+### Authorization
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
 <a id="standardAuthorization"></a>
 ### standardAuthorization
 

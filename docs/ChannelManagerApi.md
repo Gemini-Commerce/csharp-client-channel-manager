@@ -140,8 +140,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: Authorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateChannelRequest(); // ChannelmanagerCreateChannelRequest | 
@@ -195,7 +197,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
