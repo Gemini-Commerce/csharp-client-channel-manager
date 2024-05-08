@@ -37,8 +37,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: CreateAssociation
       tags:
       - ChannelManager
@@ -67,8 +66,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: CreateChannel
       tags:
       - ChannelManager
@@ -97,8 +95,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: CreateMarket
       tags:
       - ChannelManager
@@ -128,8 +125,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: DeleteAssociation
       tags:
       - ChannelManager
@@ -158,8 +154,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: DeleteChannel
       tags:
       - ChannelManager
@@ -188,8 +183,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: DeleteMarket
       tags:
       - ChannelManager
@@ -218,8 +212,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: GetChannel
       tags:
       - ChannelManager
@@ -248,8 +241,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: GetChannelWithAssociations
       tags:
       - ChannelManager
@@ -278,8 +270,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: GetMarket
       tags:
       - ChannelManager
@@ -308,8 +299,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: GetMarketWithAssociations
       tags:
       - ChannelManager
@@ -338,8 +328,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: ListChannels
       tags:
       - ChannelManager
@@ -368,8 +357,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: ListChannelsWithAssociations
       tags:
       - ChannelManager
@@ -398,8 +386,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: ListMarkets
       tags:
       - ChannelManager
@@ -428,8 +415,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: ListMarketsWithAssociations
       tags:
       - ChannelManager
@@ -458,8 +444,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: UpdateChannel
       tags:
       - ChannelManager
@@ -488,8 +473,7 @@ paths:
                 $ref: '#/components/schemas/rpcStatus'
           description: An unexpected error response.
       security:
-      - geminiAuthorization: []
-        standardAuthorization: []
+      - standardAuthorization: []
       summary: UpdateMarket
       tags:
       - ChannelManager
