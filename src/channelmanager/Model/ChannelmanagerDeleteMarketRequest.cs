@@ -35,24 +35,39 @@ namespace channelmanager.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChannelmanagerDeleteMarketRequest" /> class.
         /// </summary>
-        /// <param name="tenantId">tenantId.</param>
-        /// <param name="id">id.</param>
+        [JsonConstructorAttribute]
+        protected ChannelmanagerDeleteMarketRequest() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChannelmanagerDeleteMarketRequest" /> class.
+        /// </summary>
+        /// <param name="tenantId">tenantId (required).</param>
+        /// <param name="id">id (required).</param>
         public ChannelmanagerDeleteMarketRequest(string tenantId = default(string), string id = default(string))
         {
+            // to ensure "tenantId" is required (not null)
+            if (tenantId == null)
+            {
+                throw new ArgumentNullException("tenantId is a required property for ChannelmanagerDeleteMarketRequest and cannot be null");
+            }
             this.TenantId = tenantId;
+            // to ensure "id" is required (not null)
+            if (id == null)
+            {
+                throw new ArgumentNullException("id is a required property for ChannelmanagerDeleteMarketRequest and cannot be null");
+            }
             this.Id = id;
         }
 
         /// <summary>
         /// Gets or Sets TenantId
         /// </summary>
-        [DataMember(Name = "tenantId", EmitDefaultValue = false)]
+        [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", EmitDefaultValue = false)]
+        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>

@@ -36,11 +36,10 @@ namespace channelmanager.Model
         /// Initializes a new instance of the <see cref="ProtobufAny" /> class.
         /// </summary>
         /// <param name="type">type.</param>
-        /// <param name="value">value.</param>
-        public ProtobufAny(string type = default(string), byte[] value = default(byte[]))
+        public ProtobufAny(string type = default(string))
         {
             this.Type = type;
-            this.Value = value;
+            this.AdditionalProperties = new Dictionary<string, object>();
         }
 
         /// <summary>
@@ -50,10 +49,10 @@ namespace channelmanager.Model
         public string Type { get; set; }
 
         /// <summary>
-        /// Gets or Sets Value
+        /// Gets or Sets additional properties
         /// </summary>
-        [DataMember(Name = "value", EmitDefaultValue = false)]
-        public byte[] Value { get; set; }
+        [JsonExtensionData]
+        public IDictionary<string, object> AdditionalProperties { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -64,7 +63,7 @@ namespace channelmanager.Model
             StringBuilder sb = new StringBuilder();
             sb.Append("class ProtobufAny {\n");
             sb.Append("  Type: ").Append(Type).Append("\n");
-            sb.Append("  Value: ").Append(Value).Append("\n");
+            sb.Append("  AdditionalProperties: ").Append(AdditionalProperties).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }

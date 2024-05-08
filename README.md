@@ -85,10 +85,6 @@ namespace Example
 
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.ApiKey.Add("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateAssociationRequest(); // ChannelmanagerCreateAssociationRequest | 
@@ -181,12 +177,5 @@ Class | Method | HTTP request | Description
 <a id="documentation-for-authorization"></a>
 ## Documentation for Authorization
 
-
-Authentication schemes defined for the API:
-<a id="standardAuthorization"></a>
-### standardAuthorization
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
+Endpoints do not require authorization.
 

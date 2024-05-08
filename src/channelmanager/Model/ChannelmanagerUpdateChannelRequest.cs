@@ -35,13 +35,28 @@ namespace channelmanager.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChannelmanagerUpdateChannelRequest" /> class.
         /// </summary>
-        /// <param name="tenantId">tenantId.</param>
-        /// <param name="id">id.</param>
+        [JsonConstructorAttribute]
+        protected ChannelmanagerUpdateChannelRequest() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChannelmanagerUpdateChannelRequest" /> class.
+        /// </summary>
+        /// <param name="tenantId">tenantId (required).</param>
+        /// <param name="id">id (required).</param>
         /// <param name="payload">payload.</param>
         /// <param name="payloadMask">payloadMask.</param>
-        public ChannelmanagerUpdateChannelRequest(string tenantId = default(string), string id = default(string), ChannelmanagerUpdateChannelRequestPayload payload = default(ChannelmanagerUpdateChannelRequestPayload), List<string> payloadMask = default(List<string>))
+        public ChannelmanagerUpdateChannelRequest(string tenantId = default(string), string id = default(string), ChannelmanagerUpdateChannelRequestPayload payload = default(ChannelmanagerUpdateChannelRequestPayload), string payloadMask = default(string))
         {
+            // to ensure "tenantId" is required (not null)
+            if (tenantId == null)
+            {
+                throw new ArgumentNullException("tenantId is a required property for ChannelmanagerUpdateChannelRequest and cannot be null");
+            }
             this.TenantId = tenantId;
+            // to ensure "id" is required (not null)
+            if (id == null)
+            {
+                throw new ArgumentNullException("id is a required property for ChannelmanagerUpdateChannelRequest and cannot be null");
+            }
             this.Id = id;
             this.Payload = payload;
             this.PayloadMask = payloadMask;
@@ -50,13 +65,13 @@ namespace channelmanager.Model
         /// <summary>
         /// Gets or Sets TenantId
         /// </summary>
-        [DataMember(Name = "tenantId", EmitDefaultValue = false)]
+        [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
 
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name = "id", EmitDefaultValue = false)]
+        [DataMember(Name = "id", IsRequired = true, EmitDefaultValue = true)]
         public string Id { get; set; }
 
         /// <summary>
@@ -69,7 +84,7 @@ namespace channelmanager.Model
         /// Gets or Sets PayloadMask
         /// </summary>
         [DataMember(Name = "payloadMask", EmitDefaultValue = false)]
-        public List<string> PayloadMask { get; set; }
+        public string PayloadMask { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

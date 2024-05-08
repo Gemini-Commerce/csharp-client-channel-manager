@@ -63,14 +63,5 @@ namespace channelmanager.Test.Model
         {
             // TODO unit test for the property 'Type'
         }
-
-        /// <summary>
-        /// Test the property 'Value'
-        /// </summary>
-        [Fact]
-        public void ValueTest()
-        {
-            // TODO unit test for the property 'Value'
-        }
     }
 }

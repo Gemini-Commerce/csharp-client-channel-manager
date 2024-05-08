@@ -47,20 +47,40 @@ namespace channelmanager.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChannelmanagerCreateChannelRequest" /> class.
         /// </summary>
-        /// <param name="tenantId">tenantId.</param>
-        /// <param name="code">code.</param>
+        [JsonConstructorAttribute]
+        protected ChannelmanagerCreateChannelRequest() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChannelmanagerCreateChannelRequest" /> class.
+        /// </summary>
+        /// <param name="tenantId">tenantId (required).</param>
+        /// <param name="code">code (required).</param>
         /// <param name="image">image.</param>
-        /// <param name="name">name.</param>
+        /// <param name="name">name (required).</param>
         /// <param name="defaultLanguage">defaultLanguage.</param>
         /// <param name="settings">settings.</param>
         /// <param name="website">website.</param>
         /// <param name="status">status.</param>
         public ChannelmanagerCreateChannelRequest(string tenantId = default(string), string code = default(string), string image = default(string), string name = default(string), ChannelmanagerLanguageCode? defaultLanguage = default(ChannelmanagerLanguageCode?), ChannelmanagerChannelSettings settings = default(ChannelmanagerChannelSettings), ChannelmanagerChannelTypeWebsite website = default(ChannelmanagerChannelTypeWebsite), ChannelmanagerChannelStatus? status = default(ChannelmanagerChannelStatus?))
         {
+            // to ensure "tenantId" is required (not null)
+            if (tenantId == null)
+            {
+                throw new ArgumentNullException("tenantId is a required property for ChannelmanagerCreateChannelRequest and cannot be null");
+            }
             this.TenantId = tenantId;
+            // to ensure "code" is required (not null)
+            if (code == null)
+            {
+                throw new ArgumentNullException("code is a required property for ChannelmanagerCreateChannelRequest and cannot be null");
+            }
             this.Code = code;
-            this.Image = image;
+            // to ensure "name" is required (not null)
+            if (name == null)
+            {
+                throw new ArgumentNullException("name is a required property for ChannelmanagerCreateChannelRequest and cannot be null");
+            }
             this.Name = name;
+            this.Image = image;
             this.DefaultLanguage = defaultLanguage;
             this.Settings = settings;
             this.Website = website;
@@ -70,13 +90,13 @@ namespace channelmanager.Model
         /// <summary>
         /// Gets or Sets TenantId
         /// </summary>
-        [DataMember(Name = "tenantId", EmitDefaultValue = false)]
+        [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
 
         /// <summary>
         /// Gets or Sets Code
         /// </summary>
-        [DataMember(Name = "code", EmitDefaultValue = false)]
+        [DataMember(Name = "code", IsRequired = true, EmitDefaultValue = true)]
         public string Code { get; set; }
 
         /// <summary>
@@ -88,7 +108,7 @@ namespace channelmanager.Model
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", EmitDefaultValue = false)]
+        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>

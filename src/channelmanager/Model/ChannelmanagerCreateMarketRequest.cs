@@ -35,28 +35,48 @@ namespace channelmanager.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChannelmanagerCreateMarketRequest" /> class.
         /// </summary>
-        /// <param name="tenantId">tenantId.</param>
-        /// <param name="name">name.</param>
+        [JsonConstructorAttribute]
+        protected ChannelmanagerCreateMarketRequest() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChannelmanagerCreateMarketRequest" /> class.
+        /// </summary>
+        /// <param name="tenantId">tenantId (required).</param>
+        /// <param name="name">name (required).</param>
         /// <param name="description">description.</param>
-        /// <param name="countries">countries.</param>
+        /// <param name="countries">countries (required).</param>
         public ChannelmanagerCreateMarketRequest(string tenantId = default(string), string name = default(string), string description = default(string), List<ChannelmanagerCountryCode> countries = default(List<ChannelmanagerCountryCode>))
         {
+            // to ensure "tenantId" is required (not null)
+            if (tenantId == null)
+            {
+                throw new ArgumentNullException("tenantId is a required property for ChannelmanagerCreateMarketRequest and cannot be null");
+            }
             this.TenantId = tenantId;
+            // to ensure "name" is required (not null)
+            if (name == null)
+            {
+                throw new ArgumentNullException("name is a required property for ChannelmanagerCreateMarketRequest and cannot be null");
+            }
             this.Name = name;
-            this.Description = description;
+            // to ensure "countries" is required (not null)
+            if (countries == null)
+            {
+                throw new ArgumentNullException("countries is a required property for ChannelmanagerCreateMarketRequest and cannot be null");
+            }
             this.Countries = countries;
+            this.Description = description;
         }
 
         /// <summary>
         /// Gets or Sets TenantId
         /// </summary>
-        [DataMember(Name = "tenantId", EmitDefaultValue = false)]
+        [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
         /// </summary>
-        [DataMember(Name = "name", EmitDefaultValue = false)]
+        [DataMember(Name = "name", IsRequired = true, EmitDefaultValue = true)]
         public string Name { get; set; }
 
         /// <summary>
@@ -68,7 +88,7 @@ namespace channelmanager.Model
         /// <summary>
         /// Gets or Sets Countries
         /// </summary>
-        [DataMember(Name = "countries", EmitDefaultValue = false)]
+        [DataMember(Name = "countries", IsRequired = true, EmitDefaultValue = true)]
         public List<ChannelmanagerCountryCode> Countries { get; set; }
 
         /// <summary>

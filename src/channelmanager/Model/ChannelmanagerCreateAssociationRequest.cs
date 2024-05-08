@@ -35,32 +35,52 @@ namespace channelmanager.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChannelmanagerCreateAssociationRequest" /> class.
         /// </summary>
-        /// <param name="tenantId">tenantId.</param>
-        /// <param name="channelGrn">channelGrn.</param>
-        /// <param name="marketGrn">marketGrn.</param>
+        [JsonConstructorAttribute]
+        protected ChannelmanagerCreateAssociationRequest() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChannelmanagerCreateAssociationRequest" /> class.
+        /// </summary>
+        /// <param name="tenantId">tenantId (required).</param>
+        /// <param name="channelGrn">channelGrn (required).</param>
+        /// <param name="marketGrn">marketGrn (required).</param>
         public ChannelmanagerCreateAssociationRequest(string tenantId = default(string), string channelGrn = default(string), string marketGrn = default(string))
         {
+            // to ensure "tenantId" is required (not null)
+            if (tenantId == null)
+            {
+                throw new ArgumentNullException("tenantId is a required property for ChannelmanagerCreateAssociationRequest and cannot be null");
+            }
             this.TenantId = tenantId;
+            // to ensure "channelGrn" is required (not null)
+            if (channelGrn == null)
+            {
+                throw new ArgumentNullException("channelGrn is a required property for ChannelmanagerCreateAssociationRequest and cannot be null");
+            }
             this.ChannelGrn = channelGrn;
+            // to ensure "marketGrn" is required (not null)
+            if (marketGrn == null)
+            {
+                throw new ArgumentNullException("marketGrn is a required property for ChannelmanagerCreateAssociationRequest and cannot be null");
+            }
             this.MarketGrn = marketGrn;
         }
 
         /// <summary>
         /// Gets or Sets TenantId
         /// </summary>
-        [DataMember(Name = "tenantId", EmitDefaultValue = false)]
+        [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
 
         /// <summary>
         /// Gets or Sets ChannelGrn
         /// </summary>
-        [DataMember(Name = "channelGrn", EmitDefaultValue = false)]
+        [DataMember(Name = "channelGrn", IsRequired = true, EmitDefaultValue = true)]
         public string ChannelGrn { get; set; }
 
         /// <summary>
         /// Gets or Sets MarketGrn
         /// </summary>
-        [DataMember(Name = "marketGrn", EmitDefaultValue = false)]
+        [DataMember(Name = "marketGrn", IsRequired = true, EmitDefaultValue = true)]
         public string MarketGrn { get; set; }
 
         /// <summary>

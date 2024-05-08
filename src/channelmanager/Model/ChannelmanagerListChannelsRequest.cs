@@ -35,11 +35,21 @@ namespace channelmanager.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ChannelmanagerListChannelsRequest" /> class.
         /// </summary>
-        /// <param name="tenantId">tenantId.</param>
+        [JsonConstructorAttribute]
+        protected ChannelmanagerListChannelsRequest() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ChannelmanagerListChannelsRequest" /> class.
+        /// </summary>
+        /// <param name="tenantId">tenantId (required).</param>
         /// <param name="pageSize">The number of items to return per page. If not specified, it will returns all items..</param>
         /// <param name="pageToken">pageToken.</param>
         public ChannelmanagerListChannelsRequest(string tenantId = default(string), long pageSize = default(long), string pageToken = default(string))
         {
+            // to ensure "tenantId" is required (not null)
+            if (tenantId == null)
+            {
+                throw new ArgumentNullException("tenantId is a required property for ChannelmanagerListChannelsRequest and cannot be null");
+            }
             this.TenantId = tenantId;
             this.PageSize = pageSize;
             this.PageToken = pageToken;
@@ -48,7 +58,7 @@ namespace channelmanager.Model
         /// <summary>
         /// Gets or Sets TenantId
         /// </summary>
-        [DataMember(Name = "tenantId", EmitDefaultValue = false)]
+        [DataMember(Name = "tenantId", IsRequired = true, EmitDefaultValue = true)]
         public string TenantId { get; set; }
 
         /// <summary>

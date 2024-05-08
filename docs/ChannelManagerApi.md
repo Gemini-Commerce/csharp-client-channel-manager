@@ -45,10 +45,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateAssociationRequest(); // ChannelmanagerCreateAssociationRequest | 
@@ -102,7 +98,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -142,10 +138,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateChannelRequest(); // ChannelmanagerCreateChannelRequest | 
@@ -199,7 +191,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -239,10 +231,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateMarketRequest(); // ChannelmanagerCreateMarketRequest | 
@@ -296,7 +284,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -336,10 +324,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteAssociationRequest(); // ChannelmanagerDeleteAssociationRequest | 
@@ -393,7 +377,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -433,10 +417,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteChannelRequest(); // ChannelmanagerDeleteChannelRequest | 
@@ -490,7 +470,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -530,10 +510,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteMarketRequest(); // ChannelmanagerDeleteMarketRequest | 
@@ -587,7 +563,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -627,10 +603,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetChannelRequest(); // ChannelmanagerGetChannelRequest | 
@@ -684,7 +656,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -724,10 +696,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetChannelWithAssociationsRequest(); // ChannelmanagerGetChannelWithAssociationsRequest | 
@@ -781,7 +749,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -821,10 +789,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetMarketRequest(); // ChannelmanagerGetMarketRequest | 
@@ -878,7 +842,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -918,10 +882,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetMarketWithAssociationsRequest(); // ChannelmanagerGetMarketWithAssociationsRequest | 
@@ -975,7 +935,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1015,10 +975,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListChannelsRequest(); // ChannelmanagerListChannelsRequest | 
@@ -1072,7 +1028,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1112,10 +1068,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListChannelsWithAssociationsRequest(); // ChannelmanagerListChannelsWithAssociationsRequest | 
@@ -1169,7 +1121,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1209,10 +1161,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListMarketsRequest(); // ChannelmanagerListMarketsRequest | 
@@ -1266,7 +1214,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1306,10 +1254,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListMarketsWithAssociationsRequest(); // ChannelmanagerListMarketsWithAssociationsRequest | 
@@ -1363,7 +1307,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1403,10 +1347,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerUpdateChannelRequest(); // ChannelmanagerUpdateChannelRequest | 
@@ -1460,7 +1400,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 
@@ -1500,10 +1440,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure API key authorization: standardAuthorization
-            config.AddApiKey("Authorization", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerUpdateMarketRequest(); // ChannelmanagerUpdateMarketRequest | 
@@ -1557,7 +1493,7 @@ catch (ApiException e)
 
 ### Authorization
 
-[standardAuthorization](../README.md#standardAuthorization)
+No authorization required
 
 ### HTTP request headers
 

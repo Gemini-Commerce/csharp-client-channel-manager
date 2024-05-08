@@ -10,6 +10,8 @@ info:
   version: 1.0.0
 servers:
 - url: https://channel.api.gogemini.io/
+tags:
+- name: ChannelManager
 paths:
   /channelmanager.ChannelManager/CreateAssociation:
     post:
@@ -932,6 +934,257 @@ components:
       - COUNTRY_CODE_ZM
       - COUNTRY_CODE_ZW
       - COUNTRY_CODE_XK
+      title: |-
+        - COUNTRY_CODE_AD: Andorra
+         - COUNTRY_CODE_AE: United Arab Emirates
+         - COUNTRY_CODE_AF: Afghanistan
+         - COUNTRY_CODE_AG: Antigua & Barbuda
+         - COUNTRY_CODE_AI: Anguilla
+         - COUNTRY_CODE_AL: Albania
+         - COUNTRY_CODE_AM: Armenia
+         - COUNTRY_CODE_AO: Angola
+         - COUNTRY_CODE_AQ: Antarctica
+         - COUNTRY_CODE_AR: Argentina
+         - COUNTRY_CODE_AS: American Samoa
+         - COUNTRY_CODE_AT: Austria
+         - COUNTRY_CODE_AU: Australia
+         - COUNTRY_CODE_AW: Aruba
+         - COUNTRY_CODE_AX: Åland Islands
+         - COUNTRY_CODE_AZ: Azerbaijan
+         - COUNTRY_CODE_BA: Bosnia
+         - COUNTRY_CODE_BB: Barbados
+         - COUNTRY_CODE_BD: Bangladesh
+         - COUNTRY_CODE_BE: Belgium
+         - COUNTRY_CODE_BF: Burkina Faso
+         - COUNTRY_CODE_BG: Bulgaria
+         - COUNTRY_CODE_BH: Bahrain
+         - COUNTRY_CODE_BI: Burundi
+         - COUNTRY_CODE_BJ: Benin
+         - COUNTRY_CODE_BL: St. Barthélemy
+         - COUNTRY_CODE_BM: Bermuda
+         - COUNTRY_CODE_BN: Brunei
+         - COUNTRY_CODE_BO: Bolivia
+         - COUNTRY_CODE_BQ: Caribbean Netherlands
+         - COUNTRY_CODE_BR: Brazil
+         - COUNTRY_CODE_BS: Bahamas
+         - COUNTRY_CODE_BT: Bhutan
+         - COUNTRY_CODE_BV: Bouvet Island
+         - COUNTRY_CODE_BW: Botswana
+         - COUNTRY_CODE_BY: Belarus
+         - COUNTRY_CODE_BZ: Belize
+         - COUNTRY_CODE_CA: Canada
+         - COUNTRY_CODE_CC: Cocos (Keeling) Islands
+         - COUNTRY_CODE_CD: Congo - Kinshasa
+         - COUNTRY_CODE_CF: Central African Republic
+         - COUNTRY_CODE_CG: Congo - Brazzaville
+         - COUNTRY_CODE_CH: Switzerland
+         - COUNTRY_CODE_CI: Côte d’Ivoire
+         - COUNTRY_CODE_CK: Cook Islands
+         - COUNTRY_CODE_CL: Chile
+         - COUNTRY_CODE_CM: Cameroon
+         - COUNTRY_CODE_CN: China
+         - COUNTRY_CODE_CO: Colombia
+         - COUNTRY_CODE_CR: Costa Rica
+         - COUNTRY_CODE_CU: Cuba
+         - COUNTRY_CODE_CV: Cape Verde
+         - COUNTRY_CODE_CW: Curaçao
+         - COUNTRY_CODE_CX: Christmas Island
+         - COUNTRY_CODE_CY: Cyprus
+         - COUNTRY_CODE_CZ: Czechia
+         - COUNTRY_CODE_DE: Germany
+         - COUNTRY_CODE_DJ: Djibouti
+         - COUNTRY_CODE_DK: Denmark
+         - COUNTRY_CODE_DM: Dominica
+         - COUNTRY_CODE_DO: Dominican Republic
+         - COUNTRY_CODE_DZ: Algeria
+         - COUNTRY_CODE_EC: Ecuador
+         - COUNTRY_CODE_EE: Estonia
+         - COUNTRY_CODE_EG: Egypt
+         - COUNTRY_CODE_EH: Western Sahara
+         - COUNTRY_CODE_ER: Eritrea
+         - COUNTRY_CODE_ES: Spain
+         - COUNTRY_CODE_ET: Ethiopia
+         - COUNTRY_CODE_FI: Finland
+         - COUNTRY_CODE_FJ: Fiji
+         - COUNTRY_CODE_FK: Falkland Islands
+         - COUNTRY_CODE_FM: Micronesia
+         - COUNTRY_CODE_FO: Faroe Islands
+         - COUNTRY_CODE_FR: France
+         - COUNTRY_CODE_GA: Gabon
+         - COUNTRY_CODE_GB: UK
+         - COUNTRY_CODE_GD: Grenada
+         - COUNTRY_CODE_GE: Georgia
+         - COUNTRY_CODE_GF: French Guiana
+         - COUNTRY_CODE_GG: Guernsey
+         - COUNTRY_CODE_GH: Ghana
+         - COUNTRY_CODE_GI: Gibraltar
+         - COUNTRY_CODE_GL: Greenland
+         - COUNTRY_CODE_GM: Gambia
+         - COUNTRY_CODE_GN: Guinea
+         - COUNTRY_CODE_GP: Guadeloupe
+         - COUNTRY_CODE_GQ: Equatorial Guinea
+         - COUNTRY_CODE_GR: Greece
+         - COUNTRY_CODE_GS: South Georgia & South Sandwich Isl
+         - COUNTRY_CODE_GT: Guatemala
+         - COUNTRY_CODE_GU: Guam
+         - COUNTRY_CODE_GW: Guinea-Bissau
+         - COUNTRY_CODE_GY: Guyana
+         - COUNTRY_CODE_HK: Hong Kong
+         - COUNTRY_CODE_HM: Heard & McDonald Islands
+         - COUNTRY_CODE_HN: Honduras
+         - COUNTRY_CODE_HR: Croatia
+         - COUNTRY_CODE_HT: Haiti
+         - COUNTRY_CODE_HU: Hungary
+         - COUNTRY_CODE_ID: Indonesia
+         - COUNTRY_CODE_IE: Ireland
+         - COUNTRY_CODE_IL: Israel
+         - COUNTRY_CODE_IM: Isle of Man
+         - COUNTRY_CODE_IN: India
+         - COUNTRY_CODE_IO: British Indian Ocean Territory
+         - COUNTRY_CODE_IQ: Iraq
+         - COUNTRY_CODE_IR: Iran
+         - COUNTRY_CODE_IS: Iceland
+         - COUNTRY_CODE_IT: Italy
+         - COUNTRY_CODE_JE: Jersey
+         - COUNTRY_CODE_JM: Jamaica
+         - COUNTRY_CODE_JO: Jordan
+         - COUNTRY_CODE_JP: Japan
+         - COUNTRY_CODE_KE: Kenya
+         - COUNTRY_CODE_KG: Kyrgyzstan
+         - COUNTRY_CODE_KH: Cambodia
+         - COUNTRY_CODE_KI: Kiribati
+         - COUNTRY_CODE_KM: Comoros
+         - COUNTRY_CODE_KN: St. Kitts & Nevis
+         - COUNTRY_CODE_KP: North Korea
+         - COUNTRY_CODE_KR: South Korea
+         - COUNTRY_CODE_KW: Kuwait
+         - COUNTRY_CODE_KY: Cayman Islands
+         - COUNTRY_CODE_KZ: Kazakhstan
+         - COUNTRY_CODE_LA: Laos
+         - COUNTRY_CODE_LB: Lebanon
+         - COUNTRY_CODE_LC: St. Lucia
+         - COUNTRY_CODE_LI: Liechtenstein
+         - COUNTRY_CODE_LK: Sri Lanka
+         - COUNTRY_CODE_LR: Liberia
+         - COUNTRY_CODE_LS: Lesotho
+         - COUNTRY_CODE_LT: Lithuania
+         - COUNTRY_CODE_LU: Luxembourg
+         - COUNTRY_CODE_LV: Latvia
+         - COUNTRY_CODE_LY: Libya
+         - COUNTRY_CODE_MA: Morocco
+         - COUNTRY_CODE_MC: Monaco
+         - COUNTRY_CODE_MD: Moldova
+         - COUNTRY_CODE_ME: Montenegro
+         - COUNTRY_CODE_MF: St. Martin
+         - COUNTRY_CODE_MG: Madagascar
+         - COUNTRY_CODE_MH: Marshall Islands
+         - COUNTRY_CODE_MK: North Macedonia
+         - COUNTRY_CODE_ML: Mali
+         - COUNTRY_CODE_MM: Myanmar
+         - COUNTRY_CODE_MN: Mongolia
+         - COUNTRY_CODE_MO: Macau
+         - COUNTRY_CODE_MP: Northern Mariana Islands
+         - COUNTRY_CODE_MQ: Martinique
+         - COUNTRY_CODE_MR: Mauritania
+         - COUNTRY_CODE_MS: Montserrat
+         - COUNTRY_CODE_MT: Malta
+         - COUNTRY_CODE_MU: Mauritius
+         - COUNTRY_CODE_MV: Maldives
+         - COUNTRY_CODE_MW: Malawi
+         - COUNTRY_CODE_MX: Mexico
+         - COUNTRY_CODE_MY: Malaysia
+         - COUNTRY_CODE_MZ: Mozambique
+         - COUNTRY_CODE_NA: Namibia
+         - COUNTRY_CODE_NC: New Caledonia
+         - COUNTRY_CODE_NE: Niger
+         - COUNTRY_CODE_NF: Norfolk Island
+         - COUNTRY_CODE_NG: Nigeria
+         - COUNTRY_CODE_NI: Nicaragua
+         - COUNTRY_CODE_NL: Netherlands
+         - COUNTRY_CODE_NO: Norway
+         - COUNTRY_CODE_NP: Nepal
+         - COUNTRY_CODE_NR: Nauru
+         - COUNTRY_CODE_NU: Niue
+         - COUNTRY_CODE_NZ: New Zealand
+         - COUNTRY_CODE_OM: Oman
+         - COUNTRY_CODE_PA: Panama
+         - COUNTRY_CODE_PE: Peru
+         - COUNTRY_CODE_PF: French Polynesia
+         - COUNTRY_CODE_PG: Papua New Guinea
+         - COUNTRY_CODE_PH: Philippines
+         - COUNTRY_CODE_PK: Pakistan
+         - COUNTRY_CODE_PL: Poland
+         - COUNTRY_CODE_PM: St. Pierre & Miquelon
+         - COUNTRY_CODE_PN: Pitcairn Islands
+         - COUNTRY_CODE_PR: Puerto Rico
+         - COUNTRY_CODE_PS: Palestine
+         - COUNTRY_CODE_PT: Portugal
+         - COUNTRY_CODE_PW: Palau
+         - COUNTRY_CODE_PY: Paraguay
+         - COUNTRY_CODE_QA: Qatar
+         - COUNTRY_CODE_RE: Réunion
+         - COUNTRY_CODE_RO: Romania
+         - COUNTRY_CODE_RS: Serbia
+         - COUNTRY_CODE_RU: Russia
+         - COUNTRY_CODE_RW: Rwanda
+         - COUNTRY_CODE_SA: Saudi Arabia
+         - COUNTRY_CODE_SB: Solomon Islands
+         - COUNTRY_CODE_SC: Seychelles
+         - COUNTRY_CODE_SD: Sudan
+         - COUNTRY_CODE_SE: Sweden
+         - COUNTRY_CODE_SG: Singapore
+         - COUNTRY_CODE_SH: St. Helena
+         - COUNTRY_CODE_SI: Slovenia
+         - COUNTRY_CODE_SJ: Svalbard & Jan Mayen
+         - COUNTRY_CODE_SK: Slovakia
+         - COUNTRY_CODE_SL: Sierra Leone
+         - COUNTRY_CODE_SM: San Marino
+         - COUNTRY_CODE_SN: Senegal
+         - COUNTRY_CODE_SO: Somalia
+         - COUNTRY_CODE_SR: Suriname
+         - COUNTRY_CODE_SS: South Sudan
+         - COUNTRY_CODE_ST: São Tomé & Príncipe
+         - COUNTRY_CODE_SV: El Salvador
+         - COUNTRY_CODE_SX: Sint Maarten
+         - COUNTRY_CODE_SY: Syria
+         - COUNTRY_CODE_SZ: Eswatini
+         - COUNTRY_CODE_TC: Turks & Caicos Islands
+         - COUNTRY_CODE_TD: Chad
+         - COUNTRY_CODE_TF: French Southern Territories
+         - COUNTRY_CODE_TG: Togo
+         - COUNTRY_CODE_TH: Thailand
+         - COUNTRY_CODE_TJ: Tajikistan
+         - COUNTRY_CODE_TK: Tokelau
+         - COUNTRY_CODE_TL: Timor-Leste
+         - COUNTRY_CODE_TM: Turkmenistan
+         - COUNTRY_CODE_TN: Tunisia
+         - COUNTRY_CODE_TO: Tonga
+         - COUNTRY_CODE_TR: Turkey
+         - COUNTRY_CODE_TT: Trinidad & Tobago
+         - COUNTRY_CODE_TV: Tuvalu
+         - COUNTRY_CODE_TW: Taiwan
+         - COUNTRY_CODE_TZ: Tanzania
+         - COUNTRY_CODE_UA: Ukraine
+         - COUNTRY_CODE_UG: Uganda
+         - COUNTRY_CODE_UM: U.S. Outlying Islands
+         - COUNTRY_CODE_US: US
+         - COUNTRY_CODE_UY: Uruguay
+         - COUNTRY_CODE_UZ: Uzbekistan
+         - COUNTRY_CODE_VA: Vatican City
+         - COUNTRY_CODE_VC: St. Vincent & Grenadines
+         - COUNTRY_CODE_VE: Venezuela
+         - COUNTRY_CODE_VG: British Virgin Islands
+         - COUNTRY_CODE_VI: U.S. Virgin Islands
+         - COUNTRY_CODE_VN: Vietnam
+         - COUNTRY_CODE_VU: Vanuatu
+         - COUNTRY_CODE_WF: Wallis & Futuna
+         - COUNTRY_CODE_WS: Samoa
+         - COUNTRY_CODE_YE: Yemen
+         - COUNTRY_CODE_YT: Mayotte
+         - COUNTRY_CODE_ZA: South Africa
+         - COUNTRY_CODE_ZM: Zambia
+         - COUNTRY_CODE_ZW: Zimbabwe
+         - COUNTRY_CODE_XK: Kosovo
       type: string
     channelmanagerCreateAssociationRequest:
       properties:
@@ -940,7 +1193,12 @@ components:
         channelGrn:
           type: string
         marketGrn:
+          title: add repeated segments entity
           type: string
+      required:
+      - channelGrn
+      - marketGrn
+      - tenantId
       type: object
     channelmanagerCreateChannelRequest:
       properties:
@@ -960,6 +1218,10 @@ components:
           $ref: '#/components/schemas/channelmanagerChannelTypeWebsite'
         status:
           $ref: '#/components/schemas/channelmanagerChannelStatus'
+      required:
+      - code
+      - name
+      - tenantId
       type: object
     channelmanagerCreateMarketRequest:
       properties:
@@ -973,6 +1235,10 @@ components:
           items:
             $ref: '#/components/schemas/channelmanagerCountryCode'
           type: array
+      required:
+      - countries
+      - name
+      - tenantId
       type: object
     channelmanagerDeleteAssociationRequest:
       properties:
@@ -980,6 +1246,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerDeleteAssociationResponse:
       type: object
@@ -989,6 +1258,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerDeleteChannelResponse:
       type: object
@@ -998,6 +1270,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerDeleteMarketResponse:
       type: object
@@ -1007,6 +1282,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerGetChannelWithAssociationsRequest:
       properties:
@@ -1014,6 +1292,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerGetMarketRequest:
       properties:
@@ -1021,6 +1302,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerGetMarketWithAssociationsRequest:
       properties:
@@ -1028,6 +1312,9 @@ components:
           type: string
         id:
           type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerLanguageCode:
       default: LANGUAGE_CODE_UNKNOWN
@@ -1217,6 +1504,191 @@ components:
       - LANGUAGE_CODE_ZA
       - LANGUAGE_CODE_ZH
       - LANGUAGE_CODE_ZU
+      title: |-
+        - LANGUAGE_CODE_AA: Afar
+         - LANGUAGE_CODE_AB: Abkhazian
+         - LANGUAGE_CODE_AE: Avestan
+         - LANGUAGE_CODE_AF: Afrikaans
+         - LANGUAGE_CODE_AK: Akan
+         - LANGUAGE_CODE_AM: Amharic
+         - LANGUAGE_CODE_AN: Aragonese
+         - LANGUAGE_CODE_AR: Arabic
+         - LANGUAGE_CODE_AS: Assamese
+         - LANGUAGE_CODE_AV: Avaric
+         - LANGUAGE_CODE_AY: Aymara
+         - LANGUAGE_CODE_AZ: Azerbaijani
+         - LANGUAGE_CODE_BA: Bashkiri
+         - LANGUAGE_CODE_BE: Belarusian
+         - LANGUAGE_CODE_BG: Bulgarian
+         - LANGUAGE_CODE_BH: Bihari languages
+         - LANGUAGE_CODE_BM: Bambara
+         - LANGUAGE_CODE_BI: Bislama
+         - LANGUAGE_CODE_BN: Bengaliguages
+         - LANGUAGE_CODE_BO: Tibetan
+         - LANGUAGE_CODE_BR: Bretonrwegian; Norwegian Bokmål
+         - LANGUAGE_CODE_BS: Bosnian
+         - LANGUAGE_CODE_CA: Catalan; Valencian
+         - LANGUAGE_CODE_CE: Chechen
+         - LANGUAGE_CODE_CH: Chamorro
+         - LANGUAGE_CODE_CO: Corsicanalencian
+         - LANGUAGE_CODE_CR: Creemer
+         - LANGUAGE_CODE_CS: Czech
+         - LANGUAGE_CODE_CU: Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic
+         - LANGUAGE_CODE_CV: ChuvashChewa; Nyanja
+         - LANGUAGE_CODE_CY: Welsh
+         - LANGUAGE_CODE_DA: Danishvic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic
+         - LANGUAGE_CODE_DE: German
+         - LANGUAGE_CODE_DV: Divehi; Dhivehi; Maldivian
+         - LANGUAGE_CODE_DZ: Dzongkha
+         - LANGUAGE_CODE_EE: Ewe
+         - LANGUAGE_CODE_EL: Greek, Modern (1453-)
+         - LANGUAGE_CODE_EN: English
+         - LANGUAGE_CODE_EO: Esperanto
+         - LANGUAGE_CODE_ES: Spanish; Castilianivehi; Maldivian
+         - LANGUAGE_CODE_ET: Estonianmish
+         - LANGUAGE_CODE_EU: Basque
+         - LANGUAGE_CODE_FA: Persian
+         - LANGUAGE_CODE_FF: Fulah
+         - LANGUAGE_CODE_FI: Finnish
+         - LANGUAGE_CODE_FJ: Fijian
+         - LANGUAGE_CODE_FO: Faroese
+         - LANGUAGE_CODE_FR: French
+         - LANGUAGE_CODE_FY: Western Frisian
+         - LANGUAGE_CODE_GA: Irish
+         - LANGUAGE_CODE_GD: Gaelic; Scottish Gaelic
+         - LANGUAGE_CODE_GL: Galicianottish Gaelic
+         - LANGUAGE_CODE_GN: Guarani
+         - LANGUAGE_CODE_GU: Gujarati
+         - LANGUAGE_CODE_GV: Manx
+         - LANGUAGE_CODE_HA: Hausa
+         - LANGUAGE_CODE_HE: Hebrewern (1453-)
+         - LANGUAGE_CODE_HI: Hindi
+         - LANGUAGE_CODE_HO: Hiri Motu
+         - LANGUAGE_CODE_HR: Croatianaitian Creole
+         - LANGUAGE_CODE_HT: Haitian; Haitian Creole
+         - LANGUAGE_CODE_HU: Hungarian
+         - LANGUAGE_CODE_HY: Armenian
+         - LANGUAGE_CODE_HZ: Herero
+         - LANGUAGE_CODE_IA: Interlingua (International Auxiliary Language Association)
+         - LANGUAGE_CODE_ID: Indonesian
+         - LANGUAGE_CODE_IE: Interlingue; Occidental
+         - LANGUAGE_CODE_IG: Igbo
+         - LANGUAGE_CODE_II: Sichuan Yi; Nuosu
+         - LANGUAGE_CODE_IK: Inupiaq
+         - LANGUAGE_CODE_IO: Idoa (International Auxiliary Language Association)
+         - LANGUAGE_CODE_IS: Icelandice; Occidental
+         - LANGUAGE_CODE_IT: Italian
+         - LANGUAGE_CODE_IU: Inuktitut
+         - LANGUAGE_CODE_JA: Japanese
+         - LANGUAGE_CODE_JV: Javanese
+         - LANGUAGE_CODE_KA: Georgian
+         - LANGUAGE_CODE_KG: Kongo
+         - LANGUAGE_CODE_KI: Kikuyu; Gikuyut; Greenlandic
+         - LANGUAGE_CODE_KJ: Kuanyama; Kwanyama
+         - LANGUAGE_CODE_KK: Kazakh
+         - LANGUAGE_CODE_KL: Kalaallisut; Greenlandic
+         - LANGUAGE_CODE_KM: Central Khmer
+         - LANGUAGE_CODE_KN: Kannadakuyu
+         - LANGUAGE_CODE_KO: Koreana
+         - LANGUAGE_CODE_KR: Kanuriyrgyz
+         - LANGUAGE_CODE_KS: Kashmiri
+         - LANGUAGE_CODE_KU: Kurdish
+         - LANGUAGE_CODE_KV: Komi
+         - LANGUAGE_CODE_KW: CornishKwanyama
+         - LANGUAGE_CODE_KY: Kirghiz; Kyrgyz
+         - LANGUAGE_CODE_LA: Latin
+         - LANGUAGE_CODE_LB: Luxembourgish; Letzeburgesch
+         - LANGUAGE_CODE_LG: Ganda
+         - LANGUAGE_CODE_LI: Limburgan; Limburger; Limburgish Limburger; Limburgish
+         - LANGUAGE_CODE_LN: Lingala
+         - LANGUAGE_CODE_LO: Lao
+         - LANGUAGE_CODE_LT: Lithuanianga
+         - LANGUAGE_CODE_LU: Luba-Katangaish; Letzeburgesch
+         - LANGUAGE_CODE_LV: Latvian
+         - LANGUAGE_CODE_MG: Malagasy
+         - LANGUAGE_CODE_MH: Marshallese
+         - LANGUAGE_CODE_MI: Maori
+         - LANGUAGE_CODE_MK: Macedonian
+         - LANGUAGE_CODE_ML: Malayalam
+         - LANGUAGE_CODE_MN: Mongolian
+         - LANGUAGE_CODE_MR: Marathi
+         - LANGUAGE_CODE_MS: Malaye
+         - LANGUAGE_CODE_MT: Maltese
+         - LANGUAGE_CODE_MY: Burmese
+         - LANGUAGE_CODE_NA: Nauruvaho
+         - LANGUAGE_CODE_NB: Bokmål, Norwegian; Norwegian Bokmålorth; North Ndebele
+         - LANGUAGE_CODE_ND: Ndebele, North; North Ndebeleouth; South Ndebele
+         - LANGUAGE_CODE_NE: Nepali
+         - LANGUAGE_CODE_NG: Ndonga
+         - LANGUAGE_CODE_NL: Dutch; Flemishami
+         - LANGUAGE_CODE_NN: Norwegian Nynorsk; Nynorsk, Norwegian
+         - LANGUAGE_CODE_NO: NorwegianNynorsk; Nynorsk, Norwegian
+         - LANGUAGE_CODE_NR: Ndebele, South; South Ndebeleost 1500)
+         - LANGUAGE_CODE_NV: Navajo; Navaho
+         - LANGUAGE_CODE_NY: Chichewa; Chewa; Nyanja
+         - LANGUAGE_CODE_OC: Occitan (post 1500)
+         - LANGUAGE_CODE_OJ: OjibwaOssetic
+         - LANGUAGE_CODE_OM: Oromo
+         - LANGUAGE_CODE_OR: Oriyaunjabi
+         - LANGUAGE_CODE_OS: Ossetian; Ossetic
+         - LANGUAGE_CODE_PA: Panjabi; Punjabi
+         - LANGUAGE_CODE_PI: Pali
+         - LANGUAGE_CODE_PL: Polishshto
+         - LANGUAGE_CODE_PS: Pushto; Pashto
+         - LANGUAGE_CODE_PT: PortugueseMoldavian; Moldovan
+         - LANGUAGE_CODE_QU: Quechua
+         - LANGUAGE_CODE_RM: Romansh
+         - LANGUAGE_CODE_RN: Rundi
+         - LANGUAGE_CODE_RO: Romanian; Moldavian; Moldovan
+         - LANGUAGE_CODE_RU: Russian
+         - LANGUAGE_CODE_RW: Kinyarwanda
+         - LANGUAGE_CODE_SA: Sanskrit
+         - LANGUAGE_CODE_SC: Sardinian
+         - LANGUAGE_CODE_SD: Sindhi
+         - LANGUAGE_CODE_SE: Northern Sami; Nuosu
+         - LANGUAGE_CODE_SG: Sango
+         - LANGUAGE_CODE_SI: Sinhala; Sinhaleseinhalese
+         - LANGUAGE_CODE_SK: Slovak
+         - LANGUAGE_CODE_SL: Slovenian
+         - LANGUAGE_CODE_SM: Samoan
+         - LANGUAGE_CODE_SN: Shonathern
+         - LANGUAGE_CODE_SO: Somaliastilian
+         - LANGUAGE_CODE_SQ: Albanian
+         - LANGUAGE_CODE_SR: Serbian
+         - LANGUAGE_CODE_SS: Swati
+         - LANGUAGE_CODE_ST: Sotho, Southern
+         - LANGUAGE_CODE_SU: Sundanese
+         - LANGUAGE_CODE_SV: Swedish
+         - LANGUAGE_CODE_SW: Swahili
+         - LANGUAGE_CODE_TA: Tamil
+         - LANGUAGE_CODE_TE: Telugu
+         - LANGUAGE_CODE_TG: Tajik
+         - LANGUAGE_CODE_TH: Thai
+         - LANGUAGE_CODE_TI: Tigrinya
+         - LANGUAGE_CODE_TK: Turkmen
+         - LANGUAGE_CODE_TL: Tagalogga Islands)
+         - LANGUAGE_CODE_TN: Tswana
+         - LANGUAGE_CODE_TO: Tonga (Tonga Islands)
+         - LANGUAGE_CODE_TR: Turkish
+         - LANGUAGE_CODE_TS: Tsonga
+         - LANGUAGE_CODE_TT: Tatar
+         - LANGUAGE_CODE_TW: Twighur
+         - LANGUAGE_CODE_TY: Tahitian
+         - LANGUAGE_CODE_UG: Uighur; Uyghur
+         - LANGUAGE_CODE_UK: Ukrainian
+         - LANGUAGE_CODE_UR: Urdu
+         - LANGUAGE_CODE_UZ: Uzbek
+         - LANGUAGE_CODE_VE: Venda
+         - LANGUAGE_CODE_VI: Vietnamese
+         - LANGUAGE_CODE_VO: Volapük
+         - LANGUAGE_CODE_WA: Walloonisian
+         - LANGUAGE_CODE_WO: Wolof
+         - LANGUAGE_CODE_XH: Xhosa
+         - LANGUAGE_CODE_YI: Yiddish
+         - LANGUAGE_CODE_YO: Yoruba
+         - LANGUAGE_CODE_ZA: Zhuang; Chuanguang
+         - LANGUAGE_CODE_ZH: Chinese
+         - LANGUAGE_CODE_ZU: Zulu
       type: string
     channelmanagerListChannelsRequest:
       properties:
@@ -1229,6 +1701,8 @@ components:
           type: integer
         pageToken:
           type: string
+      required:
+      - tenantId
       type: object
     channelmanagerListChannelsResponse:
       example:
@@ -1281,6 +1755,8 @@ components:
           type: integer
         pageToken:
           type: string
+      required:
+      - tenantId
       type: object
     channelmanagerListChannelsWithAssociationsResponse:
       example:
@@ -1375,6 +1851,8 @@ components:
           type: integer
         pageToken:
           type: string
+      required:
+      - tenantId
       type: object
     channelmanagerListMarketsResponse:
       example:
@@ -1417,6 +1895,8 @@ components:
           type: integer
         pageToken:
           type: string
+      required:
+      - tenantId
       type: object
     channelmanagerListMarketsWithAssociationsResponse:
       example:
@@ -1637,9 +2117,10 @@ components:
         payload:
           $ref: '#/components/schemas/channelmanagerUpdateChannelRequestPayload'
         payloadMask:
-          items:
-            type: string
-          type: array
+          type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerUpdateChannelRequestPayload:
       properties:
@@ -1665,9 +2146,10 @@ components:
         payload:
           $ref: '#/components/schemas/channelmanagerUpdateMarketRequestPayload'
         payloadMask:
-          items:
-            type: string
-          type: array
+          type: string
+      required:
+      - id
+      - tenantId
       type: object
     channelmanagerUpdateMarketRequestPayload:
       properties:
@@ -1681,12 +2163,10 @@ components:
           type: array
       type: object
     protobufAny:
+      additionalProperties:
+        type: object
       properties:
         '@type':
-          type: string
-        value:
-          format: byte
-          pattern: "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
           type: string
       type: object
     rpcStatus:
@@ -1703,8 +2183,7 @@ components:
       type: object
   securitySchemes:
     standardAuthorization:
-      in: header
-      name: Authorization
-      type: apiKey
+      flows: {}
+      type: oauth2
 x-original-swagger-version: "2.0"
 
