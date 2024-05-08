@@ -2167,7 +2167,9 @@ components:
       type: object
   securitySchemes:
     standardAuthorization:
-      flows: {}
+      flows:
+        implicit:
+          scopes: {}
       type: oauth2
 x-original-swagger-version: "2.0"
 

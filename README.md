@@ -85,6 +85,8 @@ namespace Example
 
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateAssociationRequest(); // ChannelmanagerCreateAssociationRequest | 
@@ -177,5 +179,13 @@ Class | Method | HTTP request | Description
 <a id="documentation-for-authorization"></a>
 ## Documentation for Authorization
 
-Endpoints do not require authorization.
+
+Authentication schemes defined for the API:
+<a id="standardAuthorization"></a>
+### standardAuthorization
+
+- **Type**: OAuth
+- **Flow**: implicit
+- **Authorization URL**: 
+- **Scopes**: N/A
 

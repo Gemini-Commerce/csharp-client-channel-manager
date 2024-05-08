@@ -16,6 +16,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Mime;
 using channelmanager.Client;
+using channelmanager.Client.Auth;
 using channelmanager.Model;
 
 namespace channelmanager.Api
@@ -980,6 +981,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerCreateAssociation";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerAssociationResponse>("/channelmanager.ChannelManager/CreateAssociation", localVarRequestOptions, this.Configuration);
@@ -1054,6 +1071,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerCreateAssociation";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerAssociationResponse>("/channelmanager.ChannelManager/CreateAssociation", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -1126,6 +1159,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerCreateChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerChannelResponse>("/channelmanager.ChannelManager/CreateChannel", localVarRequestOptions, this.Configuration);
@@ -1200,6 +1249,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerCreateChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerChannelResponse>("/channelmanager.ChannelManager/CreateChannel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -1272,6 +1337,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerCreateMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerMarketResponse>("/channelmanager.ChannelManager/CreateMarket", localVarRequestOptions, this.Configuration);
@@ -1346,6 +1427,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerCreateMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerMarketResponse>("/channelmanager.ChannelManager/CreateMarket", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -1418,6 +1515,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerDeleteAssociation";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<Object>("/channelmanager.ChannelManager/DeleteAssociation", localVarRequestOptions, this.Configuration);
@@ -1492,6 +1605,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerDeleteAssociation";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/channelmanager.ChannelManager/DeleteAssociation", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -1564,6 +1693,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerDeleteChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<Object>("/channelmanager.ChannelManager/DeleteChannel", localVarRequestOptions, this.Configuration);
@@ -1638,6 +1783,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerDeleteChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/channelmanager.ChannelManager/DeleteChannel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -1710,6 +1871,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerDeleteMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<Object>("/channelmanager.ChannelManager/DeleteMarket", localVarRequestOptions, this.Configuration);
@@ -1784,6 +1961,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerDeleteMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<Object>("/channelmanager.ChannelManager/DeleteMarket", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -1856,6 +2049,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerChannelResponse>("/channelmanager.ChannelManager/GetChannel", localVarRequestOptions, this.Configuration);
@@ -1930,6 +2139,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerChannelResponse>("/channelmanager.ChannelManager/GetChannel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2002,6 +2227,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetChannelWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerChannelResponseWithAssociations>("/channelmanager.ChannelManager/GetChannelWithAssociations", localVarRequestOptions, this.Configuration);
@@ -2076,6 +2317,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetChannelWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerChannelResponseWithAssociations>("/channelmanager.ChannelManager/GetChannelWithAssociations", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2148,6 +2405,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerMarketResponse>("/channelmanager.ChannelManager/GetMarket", localVarRequestOptions, this.Configuration);
@@ -2222,6 +2495,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerMarketResponse>("/channelmanager.ChannelManager/GetMarket", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2294,6 +2583,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetMarketWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerMarketResponseWithAssociations>("/channelmanager.ChannelManager/GetMarketWithAssociations", localVarRequestOptions, this.Configuration);
@@ -2368,6 +2673,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerGetMarketWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerMarketResponseWithAssociations>("/channelmanager.ChannelManager/GetMarketWithAssociations", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2440,6 +2761,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListChannels";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerListChannelsResponse>("/channelmanager.ChannelManager/ListChannels", localVarRequestOptions, this.Configuration);
@@ -2514,6 +2851,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListChannels";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerListChannelsResponse>("/channelmanager.ChannelManager/ListChannels", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2586,6 +2939,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListChannelsWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerListChannelsWithAssociationsResponse>("/channelmanager.ChannelManager/ListChannelsWithAssociations", localVarRequestOptions, this.Configuration);
@@ -2660,6 +3029,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListChannelsWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerListChannelsWithAssociationsResponse>("/channelmanager.ChannelManager/ListChannelsWithAssociations", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2732,6 +3117,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListMarkets";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerListMarketsResponse>("/channelmanager.ChannelManager/ListMarkets", localVarRequestOptions, this.Configuration);
@@ -2806,6 +3207,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListMarkets";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerListMarketsResponse>("/channelmanager.ChannelManager/ListMarkets", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -2878,6 +3295,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListMarketsWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerListMarketsWithAssociationsResponse>("/channelmanager.ChannelManager/ListMarketsWithAssociations", localVarRequestOptions, this.Configuration);
@@ -2952,6 +3385,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerListMarketsWithAssociations";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerListMarketsWithAssociationsResponse>("/channelmanager.ChannelManager/ListMarketsWithAssociations", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -3024,6 +3473,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerUpdateChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerChannelResponse>("/channelmanager.ChannelManager/UpdateChannel", localVarRequestOptions, this.Configuration);
@@ -3098,6 +3563,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerUpdateChannel";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerChannelResponse>("/channelmanager.ChannelManager/UpdateChannel", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);
@@ -3170,6 +3651,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerUpdateMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post<ChannelmanagerMarketResponse>("/channelmanager.ChannelManager/UpdateMarket", localVarRequestOptions, this.Configuration);
@@ -3244,6 +3741,22 @@ namespace channelmanager.Api
             localVarRequestOptions.Operation = "ChannelManagerApi.ChannelManagerUpdateMarket";
             localVarRequestOptions.OperationIndex = operationIndex;
 
+            // authentication (standardAuthorization) required
+            // oauth required
+            if (!localVarRequestOptions.HeaderParameters.ContainsKey("Authorization"))
+            {
+                if (!string.IsNullOrEmpty(this.Configuration.AccessToken))
+                {
+                    localVarRequestOptions.HeaderParameters.Add("Authorization", "Bearer " + this.Configuration.AccessToken);
+                }
+                else if (!string.IsNullOrEmpty(this.Configuration.OAuthTokenUrl) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientId) &&
+                         !string.IsNullOrEmpty(this.Configuration.OAuthClientSecret) &&
+                         this.Configuration.OAuthFlow != null)
+                {
+                    localVarRequestOptions.OAuth = true;
+                }
+            }
 
             // make the HTTP request
             var localVarResponse = await this.AsynchronousClient.PostAsync<ChannelmanagerMarketResponse>("/channelmanager.ChannelManager/UpdateMarket", localVarRequestOptions, this.Configuration, cancellationToken).ConfigureAwait(false);

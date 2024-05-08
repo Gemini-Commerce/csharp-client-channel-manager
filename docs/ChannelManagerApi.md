@@ -45,6 +45,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateAssociationRequest(); // ChannelmanagerCreateAssociationRequest | 
@@ -98,7 +100,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -138,6 +140,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateChannelRequest(); // ChannelmanagerCreateChannelRequest | 
@@ -191,7 +195,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -231,6 +235,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateMarketRequest(); // ChannelmanagerCreateMarketRequest | 
@@ -284,7 +290,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -324,6 +330,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteAssociationRequest(); // ChannelmanagerDeleteAssociationRequest | 
@@ -377,7 +385,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -417,6 +425,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteChannelRequest(); // ChannelmanagerDeleteChannelRequest | 
@@ -470,7 +480,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -510,6 +520,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteMarketRequest(); // ChannelmanagerDeleteMarketRequest | 
@@ -563,7 +575,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -603,6 +615,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetChannelRequest(); // ChannelmanagerGetChannelRequest | 
@@ -656,7 +670,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -696,6 +710,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetChannelWithAssociationsRequest(); // ChannelmanagerGetChannelWithAssociationsRequest | 
@@ -749,7 +765,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -789,6 +805,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetMarketRequest(); // ChannelmanagerGetMarketRequest | 
@@ -842,7 +860,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -882,6 +900,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetMarketWithAssociationsRequest(); // ChannelmanagerGetMarketWithAssociationsRequest | 
@@ -935,7 +955,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -975,6 +995,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListChannelsRequest(); // ChannelmanagerListChannelsRequest | 
@@ -1028,7 +1050,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1068,6 +1090,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListChannelsWithAssociationsRequest(); // ChannelmanagerListChannelsWithAssociationsRequest | 
@@ -1121,7 +1145,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1161,6 +1185,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListMarketsRequest(); // ChannelmanagerListMarketsRequest | 
@@ -1214,7 +1240,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1254,6 +1280,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListMarketsWithAssociationsRequest(); // ChannelmanagerListMarketsWithAssociationsRequest | 
@@ -1307,7 +1335,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1347,6 +1375,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerUpdateChannelRequest(); // ChannelmanagerUpdateChannelRequest | 
@@ -1400,7 +1430,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
@@ -1440,6 +1470,8 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
+            // Configure OAuth2 access token for authorization: standardAuthorization
+            config.AccessToken = "YOUR_ACCESS_TOKEN";
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerUpdateMarketRequest(); // ChannelmanagerUpdateMarketRequest | 
@@ -1493,7 +1525,7 @@ catch (ApiException e)
 
 ### Authorization
 
-No authorization required
+[standardAuthorization](../README.md#standardAuthorization)
 
 ### HTTP request headers
 
