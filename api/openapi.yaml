@@ -1,0 +1,1712 @@
+openapi: 3.0.1
+info:
+  contact:
+    email: info@gemini-commerce.com
+    name: Gemini Team
+  license:
+    name: Gemini fair use license
+    url: https://gemini-commerce.com/api/fair-use-license
+  title: Channel Manager Service
+  version: 1.0.0
+servers:
+- url: https://channel.api.gogemini.io/
+paths:
+  /channelmanager.ChannelManager/CreateAssociation:
+    post:
+      description: Create a new association between a channel and a market or entities
+      operationId: ChannelManager_CreateAssociation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerCreateAssociationRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerAssociationResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: CreateAssociation
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/CreateChannel:
+    post:
+      description: Create a new channel
+      operationId: ChannelManager_CreateChannel
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerCreateChannelRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerChannelResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: CreateChannel
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/CreateMarket:
+    post:
+      description: Create a new market
+      operationId: ChannelManager_CreateMarket
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerCreateMarketRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerMarketResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: CreateMarket
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/DeleteAssociation:
+    post:
+      description: Delete an existing association between a channel and a market or
+        entities
+      operationId: ChannelManager_DeleteAssociation
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerDeleteAssociationRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerDeleteAssociationResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: DeleteAssociation
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/DeleteChannel:
+    post:
+      description: Soft delete an existing channel
+      operationId: ChannelManager_DeleteChannel
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerDeleteChannelRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerDeleteChannelResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: DeleteChannel
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/DeleteMarket:
+    post:
+      description: Soft delete an existing market
+      operationId: ChannelManager_DeleteMarket
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerDeleteMarketRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerDeleteMarketResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: DeleteMarket
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/GetChannel:
+    post:
+      description: Get an existing channel
+      operationId: ChannelManager_GetChannel
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerGetChannelRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerChannelResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: GetChannel
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/GetChannelWithAssociations:
+    post:
+      description: Get an existing channel with associations
+      operationId: ChannelManager_GetChannelWithAssociations
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerGetChannelWithAssociationsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerChannelResponseWithAssociations'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: GetChannelWithAssociations
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/GetMarket:
+    post:
+      description: Get an existing market
+      operationId: ChannelManager_GetMarket
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerGetMarketRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerMarketResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: GetMarket
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/GetMarketWithAssociations:
+    post:
+      description: Get an existing market with associations
+      operationId: ChannelManager_GetMarketWithAssociations
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerGetMarketWithAssociationsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerMarketResponseWithAssociations'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: GetMarketWithAssociations
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/ListChannels:
+    post:
+      description: List all channels
+      operationId: ChannelManager_ListChannels
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerListChannelsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerListChannelsResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: ListChannels
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/ListChannelsWithAssociations:
+    post:
+      description: List all channels with associations
+      operationId: ChannelManager_ListChannelsWithAssociations
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerListChannelsWithAssociationsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerListChannelsWithAssociationsResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: ListChannelsWithAssociations
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/ListMarkets:
+    post:
+      description: List all markets
+      operationId: ChannelManager_ListMarkets
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerListMarketsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerListMarketsResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: ListMarkets
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/ListMarketsWithAssociations:
+    post:
+      description: List all markets with associations
+      operationId: ChannelManager_ListMarketsWithAssociations
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerListMarketsWithAssociationsRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerListMarketsWithAssociationsResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: ListMarketsWithAssociations
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/UpdateChannel:
+    post:
+      description: Update an existing channel
+      operationId: ChannelManager_UpdateChannel
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerUpdateChannelRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerChannelResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: UpdateChannel
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+  /channelmanager.ChannelManager/UpdateMarket:
+    post:
+      description: Update an existing market
+      operationId: ChannelManager_UpdateMarket
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/channelmanagerUpdateMarketRequest'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/channelmanagerMarketResponse'
+          description: A successful response.
+        default:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/rpcStatus'
+          description: An unexpected error response.
+      security:
+      - geminiAuthorization: []
+        standardAuthorization: []
+      summary: UpdateMarket
+      tags:
+      - ChannelManager
+      x-codegen-request-body-name: body
+components:
+  schemas:
+    channelmanagerAssociationResponse:
+      example:
+        createdAt: 2000-01-23T04:56:07.000+00:00
+        grn: grn
+        associationEntities:
+          marketGrn: marketGrn
+          channelGrn: channelGrn
+        id: id
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          type: string
+        grn:
+          type: string
+        associationEntities:
+          $ref: '#/components/schemas/channelmanagerAssociationResponseAssociation'
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+      type: object
+    channelmanagerAssociationResponseAssociation:
+      example:
+        marketGrn: marketGrn
+        channelGrn: channelGrn
+      properties:
+        channelGrn:
+          type: string
+        marketGrn:
+          type: string
+      type: object
+    channelmanagerChannelResponse:
+      example:
+        image: image
+        settings:
+          hidePricelessProducts: true
+          hideOosProducts: true
+        createdAt: 2000-01-23T04:56:07.000+00:00
+        grn: grn
+        website:
+          domain: domain
+        code: code
+        defaultLanguage: null
+        name: name
+        id: id
+        status: null
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          type: string
+        grn:
+          type: string
+        code:
+          type: string
+        image:
+          type: string
+        name:
+          type: string
+        defaultLanguage:
+          $ref: '#/components/schemas/channelmanagerLanguageCode'
+        settings:
+          $ref: '#/components/schemas/channelmanagerChannelSettings'
+        website:
+          $ref: '#/components/schemas/channelmanagerChannelTypeWebsite'
+        status:
+          $ref: '#/components/schemas/channelmanagerChannelStatus'
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+      type: object
+    channelmanagerChannelResponseWithAssociations:
+      example:
+        associations:
+        - market:
+            createdAt: 2000-01-23T04:56:07.000+00:00
+            grn: grn
+            name: name
+            description: description
+            id: id
+            countries:
+            - null
+            - null
+            updatedAt: 2000-01-23T04:56:07.000+00:00
+        - market:
+            createdAt: 2000-01-23T04:56:07.000+00:00
+            grn: grn
+            name: name
+            description: description
+            id: id
+            countries:
+            - null
+            - null
+            updatedAt: 2000-01-23T04:56:07.000+00:00
+        image: image
+        settings:
+          hidePricelessProducts: true
+          hideOosProducts: true
+        createdAt: 2000-01-23T04:56:07.000+00:00
+        grn: grn
+        website:
+          domain: domain
+        code: code
+        defaultLanguage: null
+        name: name
+        id: id
+        status: null
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          type: string
+        grn:
+          type: string
+        code:
+          type: string
+        image:
+          type: string
+        name:
+          type: string
+        defaultLanguage:
+          $ref: '#/components/schemas/channelmanagerLanguageCode'
+        settings:
+          $ref: '#/components/schemas/channelmanagerChannelSettings'
+        website:
+          $ref: '#/components/schemas/channelmanagerChannelTypeWebsite'
+        associations:
+          items:
+            $ref: '#/components/schemas/channelmanagerChannelResponseWithAssociationsAssociation'
+          type: array
+        status:
+          $ref: '#/components/schemas/channelmanagerChannelStatus'
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+      type: object
+    channelmanagerChannelResponseWithAssociationsAssociation:
+      example:
+        market:
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          name: name
+          description: description
+          id: id
+          countries:
+          - null
+          - null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        market:
+          $ref: '#/components/schemas/channelmanagerMarketResponse'
+      type: object
+    channelmanagerChannelSettings:
+      example:
+        hidePricelessProducts: true
+        hideOosProducts: true
+      properties:
+        hideOosProducts:
+          title: Hide out of stock products
+          type: boolean
+        hidePricelessProducts:
+          type: boolean
+      type: object
+    channelmanagerChannelStatus:
+      default: CH_STATUS_UNKNOWN
+      enum:
+      - CH_STATUS_UNKNOWN
+      - CH_STATUS_ACTIVE
+      - CH_STATUS_DISABLED
+      - CH_STATUS_UNDER_MAINTENANCE
+      type: string
+    channelmanagerChannelTypeWebsite:
+      example:
+        domain: domain
+      properties:
+        domain:
+          type: string
+      type: object
+    channelmanagerCountryCode:
+      default: COUNTRY_CODE_UNKNOWN
+      enum:
+      - COUNTRY_CODE_UNKNOWN
+      - COUNTRY_CODE_AD
+      - COUNTRY_CODE_AE
+      - COUNTRY_CODE_AF
+      - COUNTRY_CODE_AG
+      - COUNTRY_CODE_AI
+      - COUNTRY_CODE_AL
+      - COUNTRY_CODE_AM
+      - COUNTRY_CODE_AO
+      - COUNTRY_CODE_AQ
+      - COUNTRY_CODE_AR
+      - COUNTRY_CODE_AS
+      - COUNTRY_CODE_AT
+      - COUNTRY_CODE_AU
+      - COUNTRY_CODE_AW
+      - COUNTRY_CODE_AX
+      - COUNTRY_CODE_AZ
+      - COUNTRY_CODE_BA
+      - COUNTRY_CODE_BB
+      - COUNTRY_CODE_BD
+      - COUNTRY_CODE_BE
+      - COUNTRY_CODE_BF
+      - COUNTRY_CODE_BG
+      - COUNTRY_CODE_BH
+      - COUNTRY_CODE_BI
+      - COUNTRY_CODE_BJ
+      - COUNTRY_CODE_BL
+      - COUNTRY_CODE_BM
+      - COUNTRY_CODE_BN
+      - COUNTRY_CODE_BO
+      - COUNTRY_CODE_BQ
+      - COUNTRY_CODE_BR
+      - COUNTRY_CODE_BS
+      - COUNTRY_CODE_BT
+      - COUNTRY_CODE_BV
+      - COUNTRY_CODE_BW
+      - COUNTRY_CODE_BY
+      - COUNTRY_CODE_BZ
+      - COUNTRY_CODE_CA
+      - COUNTRY_CODE_CC
+      - COUNTRY_CODE_CD
+      - COUNTRY_CODE_CF
+      - COUNTRY_CODE_CG
+      - COUNTRY_CODE_CH
+      - COUNTRY_CODE_CI
+      - COUNTRY_CODE_CK
+      - COUNTRY_CODE_CL
+      - COUNTRY_CODE_CM
+      - COUNTRY_CODE_CN
+      - COUNTRY_CODE_CO
+      - COUNTRY_CODE_CR
+      - COUNTRY_CODE_CU
+      - COUNTRY_CODE_CV
+      - COUNTRY_CODE_CW
+      - COUNTRY_CODE_CX
+      - COUNTRY_CODE_CY
+      - COUNTRY_CODE_CZ
+      - COUNTRY_CODE_DE
+      - COUNTRY_CODE_DJ
+      - COUNTRY_CODE_DK
+      - COUNTRY_CODE_DM
+      - COUNTRY_CODE_DO
+      - COUNTRY_CODE_DZ
+      - COUNTRY_CODE_EC
+      - COUNTRY_CODE_EE
+      - COUNTRY_CODE_EG
+      - COUNTRY_CODE_EH
+      - COUNTRY_CODE_ER
+      - COUNTRY_CODE_ES
+      - COUNTRY_CODE_ET
+      - COUNTRY_CODE_FI
+      - COUNTRY_CODE_FJ
+      - COUNTRY_CODE_FK
+      - COUNTRY_CODE_FM
+      - COUNTRY_CODE_FO
+      - COUNTRY_CODE_FR
+      - COUNTRY_CODE_GA
+      - COUNTRY_CODE_GB
+      - COUNTRY_CODE_GD
+      - COUNTRY_CODE_GE
+      - COUNTRY_CODE_GF
+      - COUNTRY_CODE_GG
+      - COUNTRY_CODE_GH
+      - COUNTRY_CODE_GI
+      - COUNTRY_CODE_GL
+      - COUNTRY_CODE_GM
+      - COUNTRY_CODE_GN
+      - COUNTRY_CODE_GP
+      - COUNTRY_CODE_GQ
+      - COUNTRY_CODE_GR
+      - COUNTRY_CODE_GS
+      - COUNTRY_CODE_GT
+      - COUNTRY_CODE_GU
+      - COUNTRY_CODE_GW
+      - COUNTRY_CODE_GY
+      - COUNTRY_CODE_HK
+      - COUNTRY_CODE_HM
+      - COUNTRY_CODE_HN
+      - COUNTRY_CODE_HR
+      - COUNTRY_CODE_HT
+      - COUNTRY_CODE_HU
+      - COUNTRY_CODE_ID
+      - COUNTRY_CODE_IE
+      - COUNTRY_CODE_IL
+      - COUNTRY_CODE_IM
+      - COUNTRY_CODE_IN
+      - COUNTRY_CODE_IO
+      - COUNTRY_CODE_IQ
+      - COUNTRY_CODE_IR
+      - COUNTRY_CODE_IS
+      - COUNTRY_CODE_IT
+      - COUNTRY_CODE_JE
+      - COUNTRY_CODE_JM
+      - COUNTRY_CODE_JO
+      - COUNTRY_CODE_JP
+      - COUNTRY_CODE_KE
+      - COUNTRY_CODE_KG
+      - COUNTRY_CODE_KH
+      - COUNTRY_CODE_KI
+      - COUNTRY_CODE_KM
+      - COUNTRY_CODE_KN
+      - COUNTRY_CODE_KP
+      - COUNTRY_CODE_KR
+      - COUNTRY_CODE_KW
+      - COUNTRY_CODE_KY
+      - COUNTRY_CODE_KZ
+      - COUNTRY_CODE_LA
+      - COUNTRY_CODE_LB
+      - COUNTRY_CODE_LC
+      - COUNTRY_CODE_LI
+      - COUNTRY_CODE_LK
+      - COUNTRY_CODE_LR
+      - COUNTRY_CODE_LS
+      - COUNTRY_CODE_LT
+      - COUNTRY_CODE_LU
+      - COUNTRY_CODE_LV
+      - COUNTRY_CODE_LY
+      - COUNTRY_CODE_MA
+      - COUNTRY_CODE_MC
+      - COUNTRY_CODE_MD
+      - COUNTRY_CODE_ME
+      - COUNTRY_CODE_MF
+      - COUNTRY_CODE_MG
+      - COUNTRY_CODE_MH
+      - COUNTRY_CODE_MK
+      - COUNTRY_CODE_ML
+      - COUNTRY_CODE_MM
+      - COUNTRY_CODE_MN
+      - COUNTRY_CODE_MO
+      - COUNTRY_CODE_MP
+      - COUNTRY_CODE_MQ
+      - COUNTRY_CODE_MR
+      - COUNTRY_CODE_MS
+      - COUNTRY_CODE_MT
+      - COUNTRY_CODE_MU
+      - COUNTRY_CODE_MV
+      - COUNTRY_CODE_MW
+      - COUNTRY_CODE_MX
+      - COUNTRY_CODE_MY
+      - COUNTRY_CODE_MZ
+      - COUNTRY_CODE_NA
+      - COUNTRY_CODE_NC
+      - COUNTRY_CODE_NE
+      - COUNTRY_CODE_NF
+      - COUNTRY_CODE_NG
+      - COUNTRY_CODE_NI
+      - COUNTRY_CODE_NL
+      - COUNTRY_CODE_NO
+      - COUNTRY_CODE_NP
+      - COUNTRY_CODE_NR
+      - COUNTRY_CODE_NU
+      - COUNTRY_CODE_NZ
+      - COUNTRY_CODE_OM
+      - COUNTRY_CODE_PA
+      - COUNTRY_CODE_PE
+      - COUNTRY_CODE_PF
+      - COUNTRY_CODE_PG
+      - COUNTRY_CODE_PH
+      - COUNTRY_CODE_PK
+      - COUNTRY_CODE_PL
+      - COUNTRY_CODE_PM
+      - COUNTRY_CODE_PN
+      - COUNTRY_CODE_PR
+      - COUNTRY_CODE_PS
+      - COUNTRY_CODE_PT
+      - COUNTRY_CODE_PW
+      - COUNTRY_CODE_PY
+      - COUNTRY_CODE_QA
+      - COUNTRY_CODE_RE
+      - COUNTRY_CODE_RO
+      - COUNTRY_CODE_RS
+      - COUNTRY_CODE_RU
+      - COUNTRY_CODE_RW
+      - COUNTRY_CODE_SA
+      - COUNTRY_CODE_SB
+      - COUNTRY_CODE_SC
+      - COUNTRY_CODE_SD
+      - COUNTRY_CODE_SE
+      - COUNTRY_CODE_SG
+      - COUNTRY_CODE_SH
+      - COUNTRY_CODE_SI
+      - COUNTRY_CODE_SJ
+      - COUNTRY_CODE_SK
+      - COUNTRY_CODE_SL
+      - COUNTRY_CODE_SM
+      - COUNTRY_CODE_SN
+      - COUNTRY_CODE_SO
+      - COUNTRY_CODE_SR
+      - COUNTRY_CODE_SS
+      - COUNTRY_CODE_ST
+      - COUNTRY_CODE_SV
+      - COUNTRY_CODE_SX
+      - COUNTRY_CODE_SY
+      - COUNTRY_CODE_SZ
+      - COUNTRY_CODE_TC
+      - COUNTRY_CODE_TD
+      - COUNTRY_CODE_TF
+      - COUNTRY_CODE_TG
+      - COUNTRY_CODE_TH
+      - COUNTRY_CODE_TJ
+      - COUNTRY_CODE_TK
+      - COUNTRY_CODE_TL
+      - COUNTRY_CODE_TM
+      - COUNTRY_CODE_TN
+      - COUNTRY_CODE_TO
+      - COUNTRY_CODE_TR
+      - COUNTRY_CODE_TT
+      - COUNTRY_CODE_TV
+      - COUNTRY_CODE_TW
+      - COUNTRY_CODE_TZ
+      - COUNTRY_CODE_UA
+      - COUNTRY_CODE_UG
+      - COUNTRY_CODE_UM
+      - COUNTRY_CODE_US
+      - COUNTRY_CODE_UY
+      - COUNTRY_CODE_UZ
+      - COUNTRY_CODE_VA
+      - COUNTRY_CODE_VC
+      - COUNTRY_CODE_VE
+      - COUNTRY_CODE_VG
+      - COUNTRY_CODE_VI
+      - COUNTRY_CODE_VN
+      - COUNTRY_CODE_VU
+      - COUNTRY_CODE_WF
+      - COUNTRY_CODE_WS
+      - COUNTRY_CODE_YE
+      - COUNTRY_CODE_YT
+      - COUNTRY_CODE_ZA
+      - COUNTRY_CODE_ZM
+      - COUNTRY_CODE_ZW
+      - COUNTRY_CODE_XK
+      type: string
+    channelmanagerCreateAssociationRequest:
+      properties:
+        tenantId:
+          type: string
+        channelGrn:
+          type: string
+        marketGrn:
+          type: string
+      type: object
+    channelmanagerCreateChannelRequest:
+      properties:
+        tenantId:
+          type: string
+        code:
+          type: string
+        image:
+          type: string
+        name:
+          type: string
+        defaultLanguage:
+          $ref: '#/components/schemas/channelmanagerLanguageCode'
+        settings:
+          $ref: '#/components/schemas/channelmanagerChannelSettings'
+        website:
+          $ref: '#/components/schemas/channelmanagerChannelTypeWebsite'
+        status:
+          $ref: '#/components/schemas/channelmanagerChannelStatus'
+      type: object
+    channelmanagerCreateMarketRequest:
+      properties:
+        tenantId:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        countries:
+          items:
+            $ref: '#/components/schemas/channelmanagerCountryCode'
+          type: array
+      type: object
+    channelmanagerDeleteAssociationRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerDeleteAssociationResponse:
+      type: object
+    channelmanagerDeleteChannelRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerDeleteChannelResponse:
+      type: object
+    channelmanagerDeleteMarketRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerDeleteMarketResponse:
+      type: object
+    channelmanagerGetChannelRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerGetChannelWithAssociationsRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerGetMarketRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerGetMarketWithAssociationsRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+      type: object
+    channelmanagerLanguageCode:
+      default: LANGUAGE_CODE_UNKNOWN
+      enum:
+      - LANGUAGE_CODE_UNKNOWN
+      - LANGUAGE_CODE_AA
+      - LANGUAGE_CODE_AB
+      - LANGUAGE_CODE_AE
+      - LANGUAGE_CODE_AF
+      - LANGUAGE_CODE_AK
+      - LANGUAGE_CODE_AM
+      - LANGUAGE_CODE_AN
+      - LANGUAGE_CODE_AR
+      - LANGUAGE_CODE_AS
+      - LANGUAGE_CODE_AV
+      - LANGUAGE_CODE_AY
+      - LANGUAGE_CODE_AZ
+      - LANGUAGE_CODE_BA
+      - LANGUAGE_CODE_BE
+      - LANGUAGE_CODE_BG
+      - LANGUAGE_CODE_BH
+      - LANGUAGE_CODE_BM
+      - LANGUAGE_CODE_BI
+      - LANGUAGE_CODE_BN
+      - LANGUAGE_CODE_BO
+      - LANGUAGE_CODE_BR
+      - LANGUAGE_CODE_BS
+      - LANGUAGE_CODE_CA
+      - LANGUAGE_CODE_CE
+      - LANGUAGE_CODE_CH
+      - LANGUAGE_CODE_CO
+      - LANGUAGE_CODE_CR
+      - LANGUAGE_CODE_CS
+      - LANGUAGE_CODE_CU
+      - LANGUAGE_CODE_CV
+      - LANGUAGE_CODE_CY
+      - LANGUAGE_CODE_DA
+      - LANGUAGE_CODE_DE
+      - LANGUAGE_CODE_DV
+      - LANGUAGE_CODE_DZ
+      - LANGUAGE_CODE_EE
+      - LANGUAGE_CODE_EL
+      - LANGUAGE_CODE_EN
+      - LANGUAGE_CODE_EO
+      - LANGUAGE_CODE_ES
+      - LANGUAGE_CODE_ET
+      - LANGUAGE_CODE_EU
+      - LANGUAGE_CODE_FA
+      - LANGUAGE_CODE_FF
+      - LANGUAGE_CODE_FI
+      - LANGUAGE_CODE_FJ
+      - LANGUAGE_CODE_FO
+      - LANGUAGE_CODE_FR
+      - LANGUAGE_CODE_FY
+      - LANGUAGE_CODE_GA
+      - LANGUAGE_CODE_GD
+      - LANGUAGE_CODE_GL
+      - LANGUAGE_CODE_GN
+      - LANGUAGE_CODE_GU
+      - LANGUAGE_CODE_GV
+      - LANGUAGE_CODE_HA
+      - LANGUAGE_CODE_HE
+      - LANGUAGE_CODE_HI
+      - LANGUAGE_CODE_HO
+      - LANGUAGE_CODE_HR
+      - LANGUAGE_CODE_HT
+      - LANGUAGE_CODE_HU
+      - LANGUAGE_CODE_HY
+      - LANGUAGE_CODE_HZ
+      - LANGUAGE_CODE_IA
+      - LANGUAGE_CODE_ID
+      - LANGUAGE_CODE_IE
+      - LANGUAGE_CODE_IG
+      - LANGUAGE_CODE_II
+      - LANGUAGE_CODE_IK
+      - LANGUAGE_CODE_IO
+      - LANGUAGE_CODE_IS
+      - LANGUAGE_CODE_IT
+      - LANGUAGE_CODE_IU
+      - LANGUAGE_CODE_JA
+      - LANGUAGE_CODE_JV
+      - LANGUAGE_CODE_KA
+      - LANGUAGE_CODE_KG
+      - LANGUAGE_CODE_KI
+      - LANGUAGE_CODE_KJ
+      - LANGUAGE_CODE_KK
+      - LANGUAGE_CODE_KL
+      - LANGUAGE_CODE_KM
+      - LANGUAGE_CODE_KN
+      - LANGUAGE_CODE_KO
+      - LANGUAGE_CODE_KR
+      - LANGUAGE_CODE_KS
+      - LANGUAGE_CODE_KU
+      - LANGUAGE_CODE_KV
+      - LANGUAGE_CODE_KW
+      - LANGUAGE_CODE_KY
+      - LANGUAGE_CODE_LA
+      - LANGUAGE_CODE_LB
+      - LANGUAGE_CODE_LG
+      - LANGUAGE_CODE_LI
+      - LANGUAGE_CODE_LN
+      - LANGUAGE_CODE_LO
+      - LANGUAGE_CODE_LT
+      - LANGUAGE_CODE_LU
+      - LANGUAGE_CODE_LV
+      - LANGUAGE_CODE_MG
+      - LANGUAGE_CODE_MH
+      - LANGUAGE_CODE_MI
+      - LANGUAGE_CODE_MK
+      - LANGUAGE_CODE_ML
+      - LANGUAGE_CODE_MN
+      - LANGUAGE_CODE_MR
+      - LANGUAGE_CODE_MS
+      - LANGUAGE_CODE_MT
+      - LANGUAGE_CODE_MY
+      - LANGUAGE_CODE_NA
+      - LANGUAGE_CODE_NB
+      - LANGUAGE_CODE_ND
+      - LANGUAGE_CODE_NE
+      - LANGUAGE_CODE_NG
+      - LANGUAGE_CODE_NL
+      - LANGUAGE_CODE_NN
+      - LANGUAGE_CODE_NO
+      - LANGUAGE_CODE_NR
+      - LANGUAGE_CODE_NV
+      - LANGUAGE_CODE_NY
+      - LANGUAGE_CODE_OC
+      - LANGUAGE_CODE_OJ
+      - LANGUAGE_CODE_OM
+      - LANGUAGE_CODE_OR
+      - LANGUAGE_CODE_OS
+      - LANGUAGE_CODE_PA
+      - LANGUAGE_CODE_PI
+      - LANGUAGE_CODE_PL
+      - LANGUAGE_CODE_PS
+      - LANGUAGE_CODE_PT
+      - LANGUAGE_CODE_QU
+      - LANGUAGE_CODE_RM
+      - LANGUAGE_CODE_RN
+      - LANGUAGE_CODE_RO
+      - LANGUAGE_CODE_RU
+      - LANGUAGE_CODE_RW
+      - LANGUAGE_CODE_SA
+      - LANGUAGE_CODE_SC
+      - LANGUAGE_CODE_SD
+      - LANGUAGE_CODE_SE
+      - LANGUAGE_CODE_SG
+      - LANGUAGE_CODE_SI
+      - LANGUAGE_CODE_SK
+      - LANGUAGE_CODE_SL
+      - LANGUAGE_CODE_SM
+      - LANGUAGE_CODE_SN
+      - LANGUAGE_CODE_SO
+      - LANGUAGE_CODE_SQ
+      - LANGUAGE_CODE_SR
+      - LANGUAGE_CODE_SS
+      - LANGUAGE_CODE_ST
+      - LANGUAGE_CODE_SU
+      - LANGUAGE_CODE_SV
+      - LANGUAGE_CODE_SW
+      - LANGUAGE_CODE_TA
+      - LANGUAGE_CODE_TE
+      - LANGUAGE_CODE_TG
+      - LANGUAGE_CODE_TH
+      - LANGUAGE_CODE_TI
+      - LANGUAGE_CODE_TK
+      - LANGUAGE_CODE_TL
+      - LANGUAGE_CODE_TN
+      - LANGUAGE_CODE_TO
+      - LANGUAGE_CODE_TR
+      - LANGUAGE_CODE_TS
+      - LANGUAGE_CODE_TT
+      - LANGUAGE_CODE_TW
+      - LANGUAGE_CODE_TY
+      - LANGUAGE_CODE_UG
+      - LANGUAGE_CODE_UK
+      - LANGUAGE_CODE_UR
+      - LANGUAGE_CODE_UZ
+      - LANGUAGE_CODE_VE
+      - LANGUAGE_CODE_VI
+      - LANGUAGE_CODE_VO
+      - LANGUAGE_CODE_WA
+      - LANGUAGE_CODE_WO
+      - LANGUAGE_CODE_XH
+      - LANGUAGE_CODE_YI
+      - LANGUAGE_CODE_YO
+      - LANGUAGE_CODE_ZA
+      - LANGUAGE_CODE_ZH
+      - LANGUAGE_CODE_ZU
+      type: string
+    channelmanagerListChannelsRequest:
+      properties:
+        tenantId:
+          type: string
+        pageSize:
+          description: "The number of items to return per page. If not specified,\
+            \ it will returns all items."
+          format: int64
+          type: integer
+        pageToken:
+          type: string
+      type: object
+    channelmanagerListChannelsResponse:
+      example:
+        channels:
+        - image: image
+          settings:
+            hidePricelessProducts: true
+            hideOosProducts: true
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          website:
+            domain: domain
+          code: code
+          defaultLanguage: null
+          name: name
+          id: id
+          status: null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        - image: image
+          settings:
+            hidePricelessProducts: true
+            hideOosProducts: true
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          website:
+            domain: domain
+          code: code
+          defaultLanguage: null
+          name: name
+          id: id
+          status: null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        nextPageToken: nextPageToken
+      properties:
+        channels:
+          items:
+            $ref: '#/components/schemas/channelmanagerChannelResponse'
+          type: array
+        nextPageToken:
+          type: string
+      type: object
+    channelmanagerListChannelsWithAssociationsRequest:
+      properties:
+        tenantId:
+          type: string
+        pageSize:
+          description: "The number of items to return per page. If not specified,\
+            \ it will returns all items."
+          format: int64
+          type: integer
+        pageToken:
+          type: string
+      type: object
+    channelmanagerListChannelsWithAssociationsResponse:
+      example:
+        channels:
+        - associations:
+          - market:
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              name: name
+              description: description
+              id: id
+              countries:
+              - null
+              - null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          - market:
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              name: name
+              description: description
+              id: id
+              countries:
+              - null
+              - null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          image: image
+          settings:
+            hidePricelessProducts: true
+            hideOosProducts: true
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          website:
+            domain: domain
+          code: code
+          defaultLanguage: null
+          name: name
+          id: id
+          status: null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        - associations:
+          - market:
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              name: name
+              description: description
+              id: id
+              countries:
+              - null
+              - null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          - market:
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              name: name
+              description: description
+              id: id
+              countries:
+              - null
+              - null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          image: image
+          settings:
+            hidePricelessProducts: true
+            hideOosProducts: true
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          website:
+            domain: domain
+          code: code
+          defaultLanguage: null
+          name: name
+          id: id
+          status: null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        nextPageToken: nextPageToken
+      properties:
+        channels:
+          items:
+            $ref: '#/components/schemas/channelmanagerChannelResponseWithAssociations'
+          type: array
+        nextPageToken:
+          type: string
+      type: object
+    channelmanagerListMarketsRequest:
+      properties:
+        tenantId:
+          type: string
+        pageSize:
+          description: "The number of items to return per page. If not specified,\
+            \ it will returns all items."
+          format: int64
+          type: integer
+        pageToken:
+          type: string
+      type: object
+    channelmanagerListMarketsResponse:
+      example:
+        markets:
+        - createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          name: name
+          description: description
+          id: id
+          countries:
+          - null
+          - null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        - createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          name: name
+          description: description
+          id: id
+          countries:
+          - null
+          - null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        nextPageToken: nextPageToken
+      properties:
+        markets:
+          items:
+            $ref: '#/components/schemas/channelmanagerMarketResponse'
+          type: array
+        nextPageToken:
+          type: string
+      type: object
+    channelmanagerListMarketsWithAssociationsRequest:
+      properties:
+        tenantId:
+          type: string
+        pageSize:
+          description: "The number of items to return per page. If not specified,\
+            \ it will returns all items."
+          format: int64
+          type: integer
+        pageToken:
+          type: string
+      type: object
+    channelmanagerListMarketsWithAssociationsResponse:
+      example:
+        markets:
+        - associations:
+          - channel:
+              image: image
+              settings:
+                hidePricelessProducts: true
+                hideOosProducts: true
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              website:
+                domain: domain
+              code: code
+              defaultLanguage: null
+              name: name
+              id: id
+              status: null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          - channel:
+              image: image
+              settings:
+                hidePricelessProducts: true
+                hideOosProducts: true
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              website:
+                domain: domain
+              code: code
+              defaultLanguage: null
+              name: name
+              id: id
+              status: null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          name: name
+          description: description
+          id: id
+          countries:
+          - null
+          - null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        - associations:
+          - channel:
+              image: image
+              settings:
+                hidePricelessProducts: true
+                hideOosProducts: true
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              website:
+                domain: domain
+              code: code
+              defaultLanguage: null
+              name: name
+              id: id
+              status: null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          - channel:
+              image: image
+              settings:
+                hidePricelessProducts: true
+                hideOosProducts: true
+              createdAt: 2000-01-23T04:56:07.000+00:00
+              grn: grn
+              website:
+                domain: domain
+              code: code
+              defaultLanguage: null
+              name: name
+              id: id
+              status: null
+              updatedAt: 2000-01-23T04:56:07.000+00:00
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          name: name
+          description: description
+          id: id
+          countries:
+          - null
+          - null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+        nextPageToken: nextPageToken
+      properties:
+        markets:
+          items:
+            $ref: '#/components/schemas/channelmanagerMarketResponseWithAssociations'
+          type: array
+        nextPageToken:
+          type: string
+      type: object
+    channelmanagerMarketResponse:
+      example:
+        createdAt: 2000-01-23T04:56:07.000+00:00
+        grn: grn
+        name: name
+        description: description
+        id: id
+        countries:
+        - null
+        - null
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          type: string
+        grn:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        countries:
+          items:
+            $ref: '#/components/schemas/channelmanagerCountryCode'
+          type: array
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+      type: object
+    channelmanagerMarketResponseWithAssociations:
+      example:
+        associations:
+        - channel:
+            image: image
+            settings:
+              hidePricelessProducts: true
+              hideOosProducts: true
+            createdAt: 2000-01-23T04:56:07.000+00:00
+            grn: grn
+            website:
+              domain: domain
+            code: code
+            defaultLanguage: null
+            name: name
+            id: id
+            status: null
+            updatedAt: 2000-01-23T04:56:07.000+00:00
+        - channel:
+            image: image
+            settings:
+              hidePricelessProducts: true
+              hideOosProducts: true
+            createdAt: 2000-01-23T04:56:07.000+00:00
+            grn: grn
+            website:
+              domain: domain
+            code: code
+            defaultLanguage: null
+            name: name
+            id: id
+            status: null
+            updatedAt: 2000-01-23T04:56:07.000+00:00
+        createdAt: 2000-01-23T04:56:07.000+00:00
+        grn: grn
+        name: name
+        description: description
+        id: id
+        countries:
+        - null
+        - null
+        updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          type: string
+        grn:
+          type: string
+        name:
+          type: string
+        description:
+          type: string
+        countries:
+          items:
+            $ref: '#/components/schemas/channelmanagerCountryCode'
+          type: array
+        associations:
+          items:
+            $ref: '#/components/schemas/channelmanagerMarketResponseWithAssociationsAssociation'
+          type: array
+        createdAt:
+          format: date-time
+          type: string
+        updatedAt:
+          format: date-time
+          type: string
+      type: object
+    channelmanagerMarketResponseWithAssociationsAssociation:
+      example:
+        channel:
+          image: image
+          settings:
+            hidePricelessProducts: true
+            hideOosProducts: true
+          createdAt: 2000-01-23T04:56:07.000+00:00
+          grn: grn
+          website:
+            domain: domain
+          code: code
+          defaultLanguage: null
+          name: name
+          id: id
+          status: null
+          updatedAt: 2000-01-23T04:56:07.000+00:00
+      properties:
+        channel:
+          $ref: '#/components/schemas/channelmanagerChannelResponse'
+      type: object
+    channelmanagerUpdateChannelRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+        payload:
+          $ref: '#/components/schemas/channelmanagerUpdateChannelRequestPayload'
+        payloadMask:
+          items:
+            type: string
+          type: array
+      type: object
+    channelmanagerUpdateChannelRequestPayload:
+      properties:
+        image:
+          type: string
+        name:
+          type: string
+        defaultLanguage:
+          $ref: '#/components/schemas/channelmanagerLanguageCode'
+        settings:
+          $ref: '#/components/schemas/channelmanagerChannelSettings'
+        website:
+          $ref: '#/components/schemas/channelmanagerChannelTypeWebsite'
+        status:
+          $ref: '#/components/schemas/channelmanagerChannelStatus'
+      type: object
+    channelmanagerUpdateMarketRequest:
+      properties:
+        tenantId:
+          type: string
+        id:
+          type: string
+        payload:
+          $ref: '#/components/schemas/channelmanagerUpdateMarketRequestPayload'
+        payloadMask:
+          items:
+            type: string
+          type: array
+      type: object
+    channelmanagerUpdateMarketRequestPayload:
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        countries:
+          items:
+            $ref: '#/components/schemas/channelmanagerCountryCode'
+          type: array
+      type: object
+    protobufAny:
+      properties:
+        '@type':
+          type: string
+        value:
+          format: byte
+          pattern: "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$"
+          type: string
+      type: object
+    rpcStatus:
+      properties:
+        code:
+          format: int32
+          type: integer
+        message:
+          type: string
+        details:
+          items:
+            $ref: '#/components/schemas/protobufAny'
+          type: array
+      type: object
+  securitySchemes:
+    standardAuthorization:
+      flows:
+        implicit:
+          authorizationUrl: https://iambackoffice.gogemini.io/iambackoffice.IamBackoffice/Login
+          scopes: {}
+      type: oauth2
+x-original-swagger-version: "2.0"
+
