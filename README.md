@@ -85,8 +85,10 @@ namespace Example
 
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.ApiKey.Add("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.ApiKeyPrefix.Add("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateAssociationRequest(); // ChannelmanagerCreateAssociationRequest | 
@@ -184,8 +186,7 @@ Authentication schemes defined for the API:
 <a id="standardAuthorization"></a>
 ### standardAuthorization
 
-- **Type**: OAuth
-- **Flow**: implicit
-- **Authorization URL**: https://iambackoffice.gogemini.io/iambackoffice.IamBackoffice/Login
-- **Scopes**: N/A
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
 

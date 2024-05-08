@@ -1703,10 +1703,8 @@ components:
       type: object
   securitySchemes:
     standardAuthorization:
-      flows:
-        implicit:
-          authorizationUrl: https://iambackoffice.gogemini.io/iambackoffice.IamBackoffice/Login
-          scopes: {}
-      type: oauth2
+      in: header
+      name: Authorization
+      type: apiKey
 x-original-swagger-version: "2.0"
 

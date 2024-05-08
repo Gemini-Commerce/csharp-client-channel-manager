@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 README.md
 api/openapi.yaml
 appveyor.yml
@@ -86,9 +85,6 @@ src/channelmanager/Api/ChannelManagerApi.cs
 src/channelmanager/Client/ApiClient.cs
 src/channelmanager/Client/ApiException.cs
 src/channelmanager/Client/ApiResponse.cs
-src/channelmanager/Client/Auth/OAuthAuthenticator.cs
-src/channelmanager/Client/Auth/OAuthFlow.cs
-src/channelmanager/Client/Auth/TokenResponse.cs
 src/channelmanager/Client/ClientUtils.cs
 src/channelmanager/Client/Configuration.cs
 src/channelmanager/Client/ExceptionFactory.cs

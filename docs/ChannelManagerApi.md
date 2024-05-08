@@ -45,8 +45,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateAssociationRequest(); // ChannelmanagerCreateAssociationRequest | 
@@ -140,8 +142,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateChannelRequest(); // ChannelmanagerCreateChannelRequest | 
@@ -235,8 +239,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerCreateMarketRequest(); // ChannelmanagerCreateMarketRequest | 
@@ -330,8 +336,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteAssociationRequest(); // ChannelmanagerDeleteAssociationRequest | 
@@ -425,8 +433,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteChannelRequest(); // ChannelmanagerDeleteChannelRequest | 
@@ -520,8 +530,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerDeleteMarketRequest(); // ChannelmanagerDeleteMarketRequest | 
@@ -615,8 +627,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetChannelRequest(); // ChannelmanagerGetChannelRequest | 
@@ -710,8 +724,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetChannelWithAssociationsRequest(); // ChannelmanagerGetChannelWithAssociationsRequest | 
@@ -805,8 +821,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetMarketRequest(); // ChannelmanagerGetMarketRequest | 
@@ -900,8 +918,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerGetMarketWithAssociationsRequest(); // ChannelmanagerGetMarketWithAssociationsRequest | 
@@ -995,8 +1015,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListChannelsRequest(); // ChannelmanagerListChannelsRequest | 
@@ -1090,8 +1112,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListChannelsWithAssociationsRequest(); // ChannelmanagerListChannelsWithAssociationsRequest | 
@@ -1185,8 +1209,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListMarketsRequest(); // ChannelmanagerListMarketsRequest | 
@@ -1280,8 +1306,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerListMarketsWithAssociationsRequest(); // ChannelmanagerListMarketsWithAssociationsRequest | 
@@ -1375,8 +1403,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerUpdateChannelRequest(); // ChannelmanagerUpdateChannelRequest | 
@@ -1470,8 +1500,10 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "https://channel.api.gogemini.io";
-            // Configure OAuth2 access token for authorization: standardAuthorization
-            config.AccessToken = "YOUR_ACCESS_TOKEN";
+            // Configure API key authorization: standardAuthorization
+            config.AddApiKey("Authorization", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // config.AddApiKeyPrefix("Authorization", "Bearer");
 
             var apiInstance = new ChannelManagerApi(config);
             var body = new ChannelmanagerUpdateMarketRequest(); // ChannelmanagerUpdateMarketRequest | 
